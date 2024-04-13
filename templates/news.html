@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/style/news.css">
+    <title>shop</title>
+</head>
+<body>
+    <header>
+        <a href="/news"> Новости</a>
+    </header>
+    <main>
+        <h1> Новости и Статьи:</h1>
+        <ul>
+            {% for product in products %}
+            <li> {{ product }} </li>
+            {% endfor %}
+        </ul>
+    </main>
+</body>
+</html>
